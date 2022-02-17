@@ -69,10 +69,10 @@ textarea {
 
 .button-48 {
   appearance: none;
-  background-color: #FFFFFF;
+  background-color: #351f1f;
   border-width: 0;
   box-sizing: border-box;
-  color: rgb(138, 137, 137);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   display: inline-block;
   font-family: Clarkson,Helvetica,sans-serif;
@@ -100,7 +100,7 @@ textarea {
 .button-48:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #707070;
+  background-color: rgb(168, 86, 39);
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -118,7 +118,7 @@ textarea {
 }
 
 .button-48:after {
-  background-color: #757575;
+  background-color: rgb(168, 86, 39);
 }
 
 .button-48 span {
@@ -155,7 +155,7 @@ textarea {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(41, 145, 136);
+  background-color: rgb(168, 86, 39);
   border-radius: 1px;
   border: 1px solid white;
 }
@@ -164,9 +164,20 @@ header h1 {
   margin-left: 4vmin;
   margin-top: 5vmin;
 }
+.policy {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
 @media (max-width:991px)
 {
+  .input-box {
+    height: calc(10px + 50vmin);
+    width: calc(10px + 80vmin);
+    margin: calc(10px + 7vmin);
+    margin-top: 0vmin;
+  }
   .main-flag {
     display: flex;
     flex-direction: column;
@@ -180,8 +191,20 @@ header h1 {
   position: fixed;
   margin-left: 44%;
 }
+a {
+  display: none;
+  text-decoration: none;
+  color: white;
+}
 
   
+}
+
+a {
+  margin-left: 106vmin;
+  margin-top: 7.2vmin;
+  text-decoration: none;
+  color: white;
 }
 
 
