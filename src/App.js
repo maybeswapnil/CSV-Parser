@@ -38,6 +38,7 @@ function App() {
       setLoading(false)
       console.log(JSON.stringify(response.data));
       setResponse(JSON.stringify(response.data))
+      prettyPrint()
     })
     .catch(function (error) {
       console.log(error);
@@ -45,6 +46,13 @@ function App() {
 
     });
   }
+
+  function prettyPrint() {
+    var ugly = response;
+    var obj = JSON.parse(ugly);
+    var pretty = JSON.stringify(obj, undefined, 4);
+    setResponse(pretty);
+}
 
  
     return (
@@ -57,6 +65,7 @@ function App() {
           <div className='main-flag'>
               <textarea className='input-box scroller' type='textarea' onChange={(e) => setCaptured(e.target.value)}/>
               {loading?<img src={load} className='loading' />:null}
+              {/* <pre className='input-box scroller' type='textarea' >{JSON.stringify(response, null, 2)}</pre> */}
               <textarea className='input-box scroller' type='textarea' value={response}/>
           </div>
           <div className='toleft'>
