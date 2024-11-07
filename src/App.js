@@ -24,7 +24,7 @@ function App() {
 
   var config = {
     method: 'post',
-    url: 'https://new-api-name.herokuapp.com/csvtojson',
+    url: 'https://api-set.onrender.com/csvtojson',
     headers: { 
       'Content-Type': 'application/json'
     },
@@ -59,7 +59,7 @@ function App() {
       <div className="App">
         <header className="App-header">
             <h1> {'{ }'}.CSV to {'{ }'}.JSON Converter</h1>
-            <a href='https://hellochemo.tech' targer='_blank'>Portfolio</a>
+            <a href='https://swapnilsharma.netlify.app/' targer='_blank'>Portfolio</a>
         </header>
         <body className='input'>
           <div className='main-flag'>
